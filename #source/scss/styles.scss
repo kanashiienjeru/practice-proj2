@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+// button sdelat'
+
+// .container {
+//   width: 1430px;
+//   margin: 0 auto;
+// }
+header {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    h1 {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.14em;
+
+      color: #555248;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+
+    .nav-item {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #555248;
+    }
+  }
+
+  .menu {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+
+    .menu-item {
+      position: relative;
+      cursor: pointer;
+
+      .notifications {
+        position: absolute;
+        top: -5px;
+        right: -7px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #E6C8B4;
+
+        p {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 9px;
+          text-align: center;
+          color: #1B1A17;
+          position: absolute;
+          top: 2px;
+          left: 4px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 37px;
+  .innovation {
+    margin-bottom: 80px;
+    background: url('../../images/Ellipse.svg') no-repeat;
+    background-position: 55%;
+    background-color: #FDFDFB;
+    height: 755px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    img {
+      position: absolute;
+      left: 52%;
+    }
+    .price {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1B1A17;
+      position: absolute;
+      top: 14%;
+      left: 48%;
+      img {
+        position: absolute;
+        left: 65px;
+        top: 3px;
+      }
+      &::before {
+        content: url('../../images/Line.svg');
+        position: absolute;
+        top: -6px;
+        left: 90px;
+      }
+    }
+    .diameter {
+      font-family: 'Prata';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1B1A17;
+      position: absolute;
+      bottom: 14%;
+      right: 17%;
+      &::after {
+        content: url('../../images/Line.svg');
+        position: absolute;
+        top: -3px;
+        left: -65px;
+      }
+    }
+    .innovation-content {
+      // display: flex;
+      // flex-direction: column;
+      position: relative;
+      margin-left: 280px;
+      h1 {
+        margin: 0;
+        margin-bottom:5px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 60px;
+        color: #1B1A17;
+        
+        &:before {
+          content: url('../../images/Line.svg');
+          position: absolute;
+          top: -12px;
+          left: -65px;
+          
+        }
+      }
+      p:first-of-type {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: #1B1A17;
+        margin-bottom: 39px;
+      }
+      p:last-of-type {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(27, 26, 23, 0.82);
+        width: 258px;
+        margin-bottom: 64px;
+      }
+      button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #444240;
+        padding: 26px 38px;
+      }
+    }
+  }
+  .popular {
+    margin-bottom: 86px;
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .container > h2 {
+      align-self: center;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      color: #1B1A17;
+    }
+    .container > button {
+      align-self: flex-end;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #444240;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #C4C0B6;
+    }
+
+    .cards {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+
+      .cards-item {
+        width: 310px;
+        padding: 40px 28px;
+        background: #FDFDFB;
+        .circle {
+          position: relative;
+          width: 313px;
+          margin-bottom: 20px;
+
+          .watch {
+            position: absolute;
+            top: -5px;
+            left: -15px;
+          }
+        }
+        h3 {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          color: rgba(27, 26, 23, 0.82);
+        }
+
+        p {
+          font-family: 'Prata';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: rgba(27, 26, 23, 0.82);
+          margin-top: 10px;
+          margin-bottom: 2px;
+        }
+        .details {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          span {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: #1B1A17;
+          }
+        }
+      }
+    }
+  }
+
+  .advantages {
+    background: linear-gradient(90deg, rgba(247,245,239,1) 0%, rgba(247,245,239,1) 35%, rgba(253,253,251,1) 35%, rgba(253,253,251,1) 100%);
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+    .advantages-content {
+      z-index: 1;
+      width: 377px;
+      h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1B1A17;
+        margin-bottom: 38px;
+      }
+
+      p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #444240;
+        margin-bottom: 45px;
+      }
+
+      button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        padding: 26px 38px;
+        background: #D4B098;
+      }
+    }
+
+    .page-counter {
+      position: absolute;
+      bottom: 20px;
+      left: 45%;
+
+      span {
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(27, 26, 23, 0.82);
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      img {
+        cursor: pointer;
+        &:last-of-type {
+          transform: rotate(180deg)
+        }
+      }
+    }
+    .lines {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+
+  .news {
+    margin-top: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 71px;
+    margin-bottom: 90px;
+
+    .news-content {
+      width: 471px;
+      h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #1B1A17;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #444240;
+        margin-bottom: 120px;
+        width: 376px;
+      }
+
+      .socials {
+        display: flex;
+        gap: 18px;
+      }
+    }
+    .photos {
+      display: grid;
+      grid-template-areas:
+      "small large"
+      "small2 large";
+      gap: 10px;
+      img:nth-of-type(1) {
+        grid-area: small;
+      }
+      img:nth-of-type(2) {
+        grid-area: small2;
+      }
+      img:nth-of-type(3) {
+        grid-area: large;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 79px;
+  gap: 118px;
+  background: #444240;
+  padding-bottom: 65px;
+
+  h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+  }
+
+  a {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+  .info {
+    margin-top: -5px;
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 33px;
+      h4 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.14em;
+        color: #FFFFFF;
+        margin-bottom: 0;
+      }
+    }
+    p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 15px;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .about-us {
+
+  }
+}
